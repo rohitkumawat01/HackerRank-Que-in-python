@@ -1,5 +1,8 @@
 if __name__ == '__main__':
     n = int(input())
     arr = map(int, input().split())
-    arr=sorted(arr)
-    print(arr[n-3])
+    arr = list(set(arr))
+    arr.sort()
+
+    print(arr[-2])
+    
